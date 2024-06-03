@@ -1,0 +1,50 @@
+<nav
+  class="navbar navbar-expand-md navbar-light bg-white fixed-top d-flex align-items-center"
+>
+  <a class="navbar-brand" href="#">
+    <div class="svg-container">
+      <img alt="monogramma Sara Morgese " id="logo" src="assets/svgs/logo.svg" />
+    </div>
+  </a>
+  <button
+    id="navbar-toggler"
+    class="navbar-toggler"
+    type="button"
+    onclick="toggleFullScreen()"
+    style="border-color: rgba(0, 0, 0, 0)"
+  >
+    <div class="svg-container">
+      <img alt="icona hamburger menù" id="burgerbtn" src="assets/svgs/burger.svg" />
+    </div>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Homepage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contatti">Contatti</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="overlay" class="overlay" onclick="toggleFullScreen()">
+    <div class="overlay-content">
+      <a class="h1 mt-5" href="index.html">Home</a>
+      <a class="h1" href="about.html">About</a>
+      <div class="group">
+        <a class="h1" href="portfolio.html">Portfolio</a>
+        <a class="body-1" href="work-in-progress.html">UX Case Study</a>
+        <a class="body-1" href="work-in-progress.html">Brand Identity</a>
+        <a class="body-1" href="work-in-progress.html">Copywriting</a>
+      </div>
+      <a class="h1" href="#contatti">Contatti</a>
+    </div>
+  </div>
+</nav>

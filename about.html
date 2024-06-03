@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sara Morgese Portfolio UX/UI </title>
+    <link rel="icon" href="assets/svgs/logo.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+  </head>
+
+  <body class="blue-gray">
+    <div id="navbar-container"></div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Fetch and insert navbar content
+    fetch("components/navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  });
+</script>
+
+    <div aria-label="breadcrumb body-2" class="breadcrumbsss">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About</li>
+      </ol>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h1 style="display: none;">Portfolio Sara Morgese</h1>
+      <div class="mx-auto chip">About</div>
+      <div class="row justify-content-between align-items-center">
+        <div class="img-container row-12 m-3 col-lg-4">
+          <img
+            alt="foto profilo 2" 
+            class="w-100"
+            style="max-width: max-content"
+            src="assets/images/profile-pic-2.png"
+          />
+        </div>
+        <div
+          class="subtitle row-12 col-lg-7 p-4"
+          style="display: flex; flex-direction: column; gap: 1rem"
+        >
+          <div class="h2 dark-blue">Qualche informazione su di me</div>
+          <div class="mb-1">
+            Dopo essermi <b>laureata</b> a pieni voti in
+            <b>Lingue e Culture Moderne</b>, all’Università di Bari “Aldo Moro”,
+            sto attualmente concludendo un <b>Master in UX/UI Design</b> presso
+            Start2Impact University. Il mio percorso eterogeneo ha sviluppato le
+            mie capacità di problem solving, <b>pensiero critico</b> e una
+            costante sete di apprendimento, portando un
+            <b>desiderio di rinnovamento nel mondo digitale</b> e non solo.
+          </div>
+          <div class="mb-1">
+            Fra le mie competenze troverete Design dell'esperienza utente,
+            <b>Copywriting</b> e particolare attenzione alla
+            <b>ricerca utente</b>. La mia vera forza è nella
+            <b>collaborazione</b>, ritengo che ogni progetto tragga beneficio da
+            un impegno collettivo.
+          </div>
+          <div class="mb-1">
+            Attualmente sto affinando le mie competenze in accessibilità e
+            design dell'interfaccia utente, sempre alla ricerca di nuove sfide
+            per migliorare il percorso digitale.
+          </div>
+          <div class="mb-1">
+            Date uno sguardo al mio <b>portfolio</b> e collaboriamo per creare
+            esperienze inclusive e significative!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="educazione" class="section">
+      <div class="mx-auto chip">Educazione</div>
+
+      <h2 class="m-4 m-lg-5 text-center dark-blue">Formazione Accademica</h2>
+      <div class="d-lg-flex" style="justify-content: space-around">
+        <div class="col-lg-5 mb-5">
+          <div class="edu-container">
+            <img
+              alt="logo dell'università degli studi di Bari" 
+              src="/assets/svgs/uniba.svg"
+              style="width: min-content; align-self: center; margin: 1.5rem"
+            />
+            <div class="d-row" style="padding: 0 1.5rem">
+              <div class="h3">
+                LAUREA IN CULTURE DELLE LINGUE MODERNE E DEL TURISMO
+              </div>
+              <div class="body-2 mb-4">
+                UNIVERSITÀ DEGLI STUDI DI BARI “ALDO MORO” | 2016-2022 | 110/110
+              </div>
+            </div>
+          </div>
+          <ul class="m-4">
+            <li class="subtitle mb-3">
+              Certificate le competenze linguisitche in Inglese e Spagnolo,
+              entrambe a livello C1.
+            </li>
+            <li class="subtitle">
+              Particolare attenzione alla traduzione, all’analisi di testi
+              letterare e alla conoscenza delle culture dei rispettivi paesi.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5">
+          <div
+            class="edu-container"
+            style="margin-top: 0.5rem; margin-bottom: 1.5rem"
+          >
+            <img
+              alt="logo di Start2Impact"
+              src="/assets/svgs/s2i.svg"
+              style="width: min-content; align-self: center; margin: 1.5rem"
+            />
+            <div class="d-row">
+              <div class="h3">MASTER IN UX/UI DESIGN</div>
+              <div class="body-2 mb-4">
+                START2IMPACT UNIVERSITY | 2022 - PRESENTE
+              </div>
+            </div>
+          </div>
+          <ul class="m-4">
+            <li class="subtitle mb-3">
+              Studio dei principi di Design, come processo iterativo e
+              collaborativo, dalla definizione del problema alla creazione di un
+              prototipo.
+            </li>
+            <li class="subtitle">
+              Imparare progettando: per ogni step del percorso sono stati
+              realizzati progetti concreti per mettere in pratica le conoscenze
+              acquisite.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="tools-container">
+        <div class="header">
+          <div class="chip mx-auto">Strumenti</div>
+          <div class="subtitle text-center">Gli strumenti che utilizzo</div>
+        </div>
+        <div id="ic1" class="icon-container">
+          <div class="tablet-only img-container">
+            <img alt="icona di google" class="item" src="/assets/svgs/google.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di figma" class="item" src="/assets/svgs/figma.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di miro" class="item" src="/assets/svgs/miro.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di illustator" class="item" src="/assets/svgs/illustrator.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di adobe xd" class="item" src="/assets/svgs/xd.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di adobe photoshop" class="item" src="/assets/svgs/ps.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di adobe indesign" class="item" src="/assets/svgs/indesign.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <div class="header">
+          <div class="chip mx-auto">Ispirazione e formazione</div>
+          <div class="subtitle text-center">
+            Le mie fonti di ispirazione e formazione in abito design
+          </div>
+        </div>
+        <div id="ic2" class="icon-container">
+          <div class="img-container">
+            <img alt="icona di behance" class="item" src="/assets/svgs/behance.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di dribble" class="item" src="/assets/svgs/dribbble.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di medium" class="item" src="/assets/svgs/medium.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di NN" class="item" src="/assets/svgs/NN.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di pinterest" class="item" src="/assets/svgs/pinterest.svg" />
+          </div>
+          <div class="img-container">
+            <img alt="icona di awwwards" class="item" src="/assets/svgs/awwwards.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="tools-container">
+        <div class="header">
+          <div class="chip mx-auto">Soft skills</div>
+        </div>
+        <div id="ic2" class="icon-container">
+          <div class="img-container">
+            <img alt="icona di comunicazione" class="item" src="/assets/svgs/Communication.svg" />
+            <div class="info">Comunicazione</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di problem solving" class="item" src="/assets/svgs/Problem solving.svg" />
+            <div class="info">Problem Solving</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di active learning" class="item" src="/assets/svgs/Active Learning.svg" />
+            <div class="info">Active Learning</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di collaborazione" class="item" src="/assets/svgs/Collaboration.svg" />
+            <div class="info">Collaborazione</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di empatia" class="item" src="/assets/svgs/Empatia.svg" />
+            <div class="info">Empatia</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di pensiero critico" class="item" src="/assets/svgs/Critical Thinking.svg" />
+            <div class="info">Critical Thinking</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <div class="header">
+          <div class="chip mx-auto">Hard skills</div>
+        </div>
+        <div id="ic2" class="icon-container">
+          <div class="img-container">
+            <img alt="icona di wireframing" class="item" src="/assets/svgs/wireframing.svg" />
+            <div class="info">Wireframing</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di design system" class="item" src="/assets/svgs/Design System.svg" />
+            <div class="info">Design Sistem</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di user research" class="item" src="/assets/svgs/User research.svg" />
+            <div class="info">User Research</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di A/B testing" class="item" src="/assets/svgs/AB testing.svg" />
+            <div class="info">A/B Testing</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di copywriting" class="item" src="/assets/svgs/Copywriting.svg" />
+            <div class="info">Copywriting</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di user interface" class="item" src="/assets/svgs/User Interface.svg" />
+            <div class="info">User Interface</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <div class="header">
+          <div class="chip mx-auto">Hobby</div>
+        </div>
+        <div id="ic3" class="icon-container">
+          <div class="img-container">
+            <img alt="icona di tecnologia" class="item" src="/assets/svgs/Tecnologia.svg" />
+            <div class="info">Tecnologia</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di fotografia" class="item" src="/assets/svgs/Fotografia.svg" />
+            <div class="info">Fotografia</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di musica" class="item" src="/assets/svgs/Musica.svg" />
+            <div class="info">Musica</div>
+          </div>
+          <div class="img-container">
+            <img alt="icona di gaming" class="item" src="/assets/svgs/Gaming.svg" />
+            <div class="info">Gaming</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lavoro" class="section">
+      <div class="mx-auto chip">Lavoro</div>
+
+      <h2 class="m-4 m-lg-5 text-center dark-blue">Esperienze Lavorative</h2>
+      <div class="d-lg-flex" style="justify-content: space-around">
+        <div class="col-lg-5">
+          <div
+            class="edu-container"
+            style="margin-top: 1rem; margin-bottom: 2.5rem"
+          >
+            <img
+              alt="logo di fondazione Franco Pannuti" 
+              src="/assets/svgs/FondazioneFP.svg"
+              style="width: min-content; align-self: center; margin: 1.5rem"
+            />
+            <div class="d-row">
+              <div class="h3">SERVIZIO CIVILE UNIVERSALE</div>
+              <div class="body-2 mb-4">
+                FONDAZIONE ANT | MAGGIO 2020 - MAGGIO 2021
+              </div>
+            </div>
+          </div>
+          <ul class="m-4">
+            <li class="subtitle">
+              Attività di organizzazione eventi, campagne di autofinanziamento,
+              gestione e inventario del magazzino.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 mb-5">
+          <div class="edu-container">
+            <img
+              alt="logo università degli studi di bari" 
+              src="/assets/svgs/uniba.svg"
+              style="width: min-content; align-self: center; margin: 1.5rem"
+            />
+            <div class="d-row" style="padding: 0 1.5rem">
+              <div class="h3">TIROCINIO CURRICULARE</div>
+              <div class="body-2 mb-4">
+                ISTITUTO PARITARIO MADRE CLELIA MERLONI | OTTOBRE 2021
+              </div>
+            </div>
+          </div>
+          <ul class="m-4">
+            <li class="subtitle mb-3">
+              Insegnamento della lingua Inglese a studenti di età compresa fra i
+              6 e 10 anni, attraverso attività interattive per sviluppare le
+              competenze linguistiche scritte e orali
+            </li>
+            <li class="subtitle">
+              Preparazione degli studenti all’esame di lingua Inglese
+              “Cambridge”
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="contatti"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch and insert navbar content
+        fetch("components/contacts.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("contatti").innerHTML = data;
+          });
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/script.js" defer></script>
+
+  </body>
+</html>

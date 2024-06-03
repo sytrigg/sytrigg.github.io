@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sara Morgese Portfolio UX/UI </title>
+    <link rel="icon" href="assets/svgs/logo.svg" type="image/svg+xml" />
+
+    <meta property="og:title" content="Portfolio UX/UI Design di Sara Morgese"/>
+    <meta property="og:description" content="Esplora il mio portfolio e scopri come design intuitivo e funzionale possono migliorare l'esperienza utente"/>
+    <meta property="og:image:url" content="https://sytrigg.github.io/assets/images/preview.png" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="it_IT"/>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <script src="assets/script.js" defer></script>
+
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch and insert navbar content
+        fetch("components/navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      });
+    </script>
+
+    <!-- Homepage Section -->
+    <section id="homepage" class="section">
+      <h1 style="display: none;">Portfolio Sara Morgese</h1>
+      <div class="img-container col-lg-4 order-lg-2">
+        <img alt="foto profilo 1" id="img1" src="assets/images/Pic.png" />
+      </div>
+
+      <div id="hero" class="col-lg-8 container col-12 order-lg-1">
+        <div id="description">
+          <h1 id="name">Ciao, sono Sara!</h1>
+          <div id="who" class="subtitle">Junior UX/UI Designer con l’obiettivo di rendere il mondo digitale un luogo inclusivo per tutti.</div>
+        </div>
+
+        <div id="hook" class="subtitle desktop-only">Vuoi collaborare con me o scambiare qualche idea?</div>
+        <a  role="button" id="contattami" class="btn-1" href="#contatti">Contattami!</a>
+      </div>
+    </section>
+
+    <!-- Progetti Section -->
+    <section id="portfolio" class="section">
+      <div class="chip mb-3 ">Portfolio</div>
+      <div class="body-1 mb-4 mb-lg-5">Alcuni progetti a cui ho lavorato</div>
+      <div>
+
+
+        <div id="card-1" class="card mb-4 mb-lg-5">
+          <div class="upper-card col-lg-6">
+            <img
+              alt="mockup sito iVegan"
+              class="card-image"
+              src="assets/svgs/card-1.svg"
+            />
+          </div>
+          <div class="lower-card col-lg-6">
+            <div class="h3">UX Case Study</div>
+            <div class="body-2 mb-4">iVegan - Ecommerce Vegano</div>
+            <div class="chip-container">
+              <div class="chip">User Research</div>
+              <div class="chip">Wireframing</div>
+              <div class="chip">UI Design</div>
+              <div class="chip">Survey</div>
+              <div class="chip">Mobile</div>
+              <div class="chip">Competitive Benchmarking</div>
+              <div class="chip">Heuristic Evaluation</div>
+              <div class="chip">Desktop</div>
+              <div class="chip">Target Analysis</div>
+              <div class="chip">Usability</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-2" class="card mb-4 mb-lg-5">
+          <div class="upper-card col-lg-6 order-lg-2">
+            <img
+              alt="mockup Orizon"
+              class="card-image"
+              src="assets/svgs/card-2.svg"
+            />
+          </div>
+          <div class="lower-card col-lg-6">
+            <div class="h3">Brand Identity</div>
+            <div class="body-2 mb-4">Orizon - Agenzia Viaggi</div>
+            <div class="chip-container">
+              <div class="chip">Logo Design</div>
+              <div class="chip">Color Palette</div>
+              <div class="chip">Icon Design</div>
+              <div class="chip">Typography</div>
+              <div class="chip">Social Media</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-3" class="card mb-4 mb-lg-5">
+          <div class="upper-card col-lg-6">
+            <img
+              alt="mockup hotel Pomelia"
+              class="card-image"
+              src="assets/svgs/card-3.svg"
+            />
+          </div>
+          <div class="lower-card col-lg-6">
+            <div class="h3">Copywriting | Blog Post</div>
+            <div class="body-2 mb-4">Hotel pomelia</div>
+            <div class="chip-container">
+              <div class="chip">Copywriting</div>
+              <div class="chip">Target Analysis</div>
+              <div class="chip">Research</div>
+              <div class="chip">Typography</div>
+              <div class="chip">Empathy</div>
+              <div class="chip">Storytelling</div>
+              <div class="chip">Creative Writing</div>
+            </div>
+          </div>
+        </div>
+        <a href="portfolio.html" class="mx-auto btn-2 ">Scopri il Portfolio</a>
+        
+    </section>
+
+    <section id="dicono-di-me" class="section">
+      <div class="d-flex flex-column align-items-center" style="gap:24px">
+        <div>
+            <div class="chip mx-auto">Dicono di me</div>
+            <div class="body-1" style="color: #4b5563; text-align: center; margin: 2rem ; margin-top: 1.5rem; max-width: 35rem">Gli esperti del settore che hanno corretto i miei progetti dicono a riguardo:</div>
+         </div>
+
+         <div class="card-container">
+          <div class="user-card mb-4">
+              <img alt="icona utente generico" src="/assets/svgs/user-circle.svg" class="card-icon"/>
+              <div class="subtitle">Il tuo lavoro traspira proattività e puro appassionamento. Le personas e le UI sono ben argomentate, quindi convincono il lettore in virtù della loro credibilità e livello di dettaglio.</div>
+              <div>
+                <div class="h3 mb-1">Alessandro Curci</div>
+                <div class="body-2">Senior UX/UI Designer per il Gruppo Immobiliare.it</div>
+              </div>
+            </div>
+
+            <div class="user-card mb-4">
+              <img alt="icona utente generico" src="/assets/svgs/user-circle.svg" class="card-icon"/>
+              <div class="subtitle">Hai ottenuto un risultato professionale, ben fatto! Non mi rimane che augurarti un buon proseguimento di percorso, che tu possa raggiungere i tuoi obiettivi! Continua così.</div>
+              <div>
+                <div class="h3 mb-1">Silviu Marian Manu</div>
+                <div class="body-2">Art Director Freelance</div>
+              </div>
+            </div>
+
+            <div class="user-card mb-4">
+              <img alt="icona utente generico" src="/assets/svgs/user-circle.svg" class="card-icon"/>
+              <div class="subtitle">L'elaborato è davvero preciso e completo, non solo a livello di wireframe ma anche le spiegazioni delle tue scelte sono chiare e contestuali, la qualità del lavoro è quindi alta.</div>
+              <div>
+                <div class="h3 mb-1">Fabio Orlandi</div>
+                <div class="body-2">Senior UX/UI Designer</div>
+              </div>
+            </div>
+        </div>
+
+
+         </div>
+      </div>
+    </section>
+
+    <div id="contatti"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch and insert navbar content
+        fetch("components/contacts.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("contatti").innerHTML = data;
+          });
+      });
+    </script>
+
+    
+    
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
