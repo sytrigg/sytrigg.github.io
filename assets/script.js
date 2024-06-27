@@ -47,3 +47,6 @@ function loadContent(url, elementId) {
       });
   });
 }
+
+loadContent("components/navbar.html", "navbar-container");
+loadContent("components/contacts.html", "contatti");
