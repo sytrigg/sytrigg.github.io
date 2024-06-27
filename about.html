@@ -35,7 +35,11 @@
 
 
 <script>
-  loadContent("components/navbar.html", "navbar-container");
+    // Ensure the DOM is fully loaded before calling the function
+    document.addEventListener("DOMContentLoaded", function () {
+      loadContent("components/navbar.html", "navbar-container");
+      loadContent("components/contacts.html", "contatti");
+    }
 </script>
 
     <div aria-label="breadcrumb body-2" class="breadcrumbsss">
@@ -369,9 +373,6 @@
     </section>
 
     <div id="contatti"></div>
-    <script>
-      loadContent("components/contacts.html", "contatti");
-    </script>
 
     <!-- Scripts -->
     <script
