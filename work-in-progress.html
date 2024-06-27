@@ -31,17 +31,10 @@
 
   <body>
     <div id="navbar-container"></div>
-    <h1 style="display: none;">Portfolio Sara Morgese</h1>
+    <div class="h1" style="display: none;">Portfolio Sara Morgese</h1>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Fetch and insert navbar content
-        fetch("components/navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar-container").innerHTML = data;
-          });
-      });
+      loadContent("components/navbar.html", "navbar-container");
     </script>
 
    
@@ -52,14 +45,7 @@
 
     <div id="contatti"></div>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Fetch and insert navbar content
-        fetch("components/contacts.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("contatti").innerHTML = data;
-          });
-      });
+      loadContent("components/contacts.html", "contatti");
     </script>
 
     <!-- Scripts -->
