@@ -37,3 +37,13 @@
       isFullScreen = false;
     }
   }
+
+function loadContent(url, elementId) {
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch(url)
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById(elementId).innerHTML = data;
+      });
+  });
+}
