@@ -35,14 +35,7 @@
     <div id="navbar-container"></div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Fetch and insert navbar content
-        fetch("components/navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar-container").innerHTML = data;
-          });
-      });
+      loadContent("components/navbar.html", "navbar-container");
     </script>
 
     <div aria-label="breadcrumb body-2" class="breadcrumbsss">
@@ -143,14 +136,7 @@
 
     <div id="contatti"></div>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Fetch and insert navbar content
-        fetch("components/contacts.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("contatti").innerHTML = data;
-          });
-      });
+      loadContent("components/contacts.html", "contatti");
     </script>
 
     <!-- Scripts -->
